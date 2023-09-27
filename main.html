@@ -1,72 +1,79 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        /* Define CSS for the black cell with white text */
-        .black-cell {
-            background-color: black;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <table border="1">
-        <tr>
-            <td>Nested Table 1</td>
-            <td>Nested Table 2</td>
-            <td>Nested Table 3</td>
-            <td>Nested Table 4</td>
-        </tr>
-        <tr>
-            <td>
-                <table border="1">
-                    <tr>
-                        <th>Header 1</th>
-                        <th>Header 2</th>
-                    </tr>
-                    <tr>
-                        <td>List item 1</td>
-                        <td>List item 2</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table border="1">
-                    <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table border="1">
-                    <tr>
-                        <th>Header A</th>
-                        <th>Header B</th>
-                    </tr>
-                    <tr>
-                        <td>List item 1</td>
-                        <td>List item 2</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table border="1">
-                    <tr>
-                        <th>Header X</th>
-                        <th>Header Y</th>
-                    </tr>
-                    <tr>
-                        <td class="black-cell">HTML</td>
-                        <td>Cell 2</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css" />
+	  <style>
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+	
+}
+table{
+	width: 100%;
+/* 	height:100%; */
+}
+tr.table4 td{
+	background-color: black;
+	color:white;
+
+}
+		  
+	  </style>
+  </head>
+  <body>
+    <table class="table_ori"  >
+      <!-- Your code here -->
+		<tr>
+			<td>
+				<table>
+					<tr><th colspan="2">Nested Table 2</th></tr>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+					</tr>
+					<tr>
+						<td>abc</td>
+						<td>def</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table>
+					<tr><th>Nested Table 1</th></tr>
+					<tr><td >
+						<ul >
+							<li>List item</li>
+							<li>List item</li>
+							<li>List item</li>
+						</ul>
+					</td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<th colspan="2">Nested Table 3</th>
+					</tr>
+					<tr><td><a href="#">Nested Table</a></td>
+					<td>Demo Continued</td></tr>
+				</table>
+			</td>
+			<td>
+				<table >
+					<tr>
+						<th>Nested Table 4</th>
+					</tr>
+					<tr class="table4">
+						<td>HTML</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
     </table>
-</body>
+  </body>
 </html>
